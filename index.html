@@ -6,25 +6,27 @@
     <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="styles.css">
     </head>
+    <script src="https://kit.fontawesome.com/6ac6f294f9.js" crossorigin="anonymous"></script>
 <body>
     <div id="header">
         <div class="container">
             <nav>
                 <img src="" class="logo" alt="">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                     <li><a href="#">About Me</a></li>
-                      <li><a href="#">Projects</a></li>
-                       <li><a href="#">Contact</a></li>
+                    <li><a href="#header">Home</a></li>
+                     <li><a href="#about">About Me</a></li>
+                    <li><a href="#services">Services</a></li>
+                      <li><a href="#portfolio">Projects</a></li>
+                       <li><a href="#contact">Contact</a></li>
+                      
                 </ul>
                 
             </nav>
-            <div class="theme-toggle">
-            <button id="toggleTheme">Switch Theme</button>
+            
         </div>
          <div class="header-text">
-    <p> Junior Software Developer <br> Crafting Innovative Digital Experiences</p>
-    <h1>Hi,I'm <span>Jeff</span><br> omullo FROM Kenya</h1>
+    <h6> Junior Software Developer <br> Crafting Innovative Digital Experiences</h6>
+    <h2>Hi,I'm <span>Jeff</span><br> omullo FROM Kenya</h2>
              </div>
         </div>
 
@@ -34,20 +36,20 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="jeff.jpg" alt="">
+                    <img src="img/copy12.jpg" alt="">
                 </div>
                  <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
                     <p>I am a passionate and driven second-year Computer Science student at Rongo University, with a keen interest in software development and problem-solving. My journey is fueled by a commitment to creating innovative solutions that simplify everyday challenges. Currently, I am expanding my expertise in software engineering through an online course sponsored by Safaricom, which has equipped me with essential programming and application development skills.
 
 </p>
-         <div class="tab-titles">
-            <p class="tab-links active-links">Skills</p>
-            <p class="tab-links">Experience</p>
-            <p class="tab-links">Education</p>
-            
-         </div>
-         <div class="tab-contents">
+        <div class="tab-titles">
+    <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+    <p class="tab-links" onclick="opentab('education')">Education</p>
+</div>
+
+         <div class="tab-contents active-tab"id="skills">
             <ul>                
               <li><span>Programming Languages</span><br>JavaScript, Python, SQL</li>
              <li><span>Web Development</span><br>React.js, HTML, CSS</li>
@@ -55,7 +57,7 @@
             <li><span>Tools & Technologies</span><br>Git</li>
             </ul>
         </div>
-        <div class="tab-contents">
+        <div class="tab-contents "id="experience">
             <ul>                
             <li><span>2023-current</span><br>junior software Developer</li>
             <li><span>2023-2024</span><br>trained and certified in Data Entry</li>
@@ -63,7 +65,7 @@
             <li><span>2023-2024</span>trained and certified in financial marketing and trades<br></li>
             </ul>
          </div>
-         <div class="tab-contents">
+         <div class="tab-contents"id="education">
             <ul>                
 <li>2023-2024<span></span><br>undergraduate bachelors Degree Computer Science</li>
 <li><span>2023-2024</span><br>Ajira Digital Training</li>
@@ -75,6 +77,121 @@
             </div>
         </div>
     </div>
+<!-----services-->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-webflow"></i>
+                <h2>Web Development</h2>
+                <p>Custom website design and development for businesses, startups, and individuals.
+Expertise in creating interactive, responsive, and SEO-friendly websites.
+Integration of dynamic features like payment gateways, live chat, streaming functionality, and smart tools.</p>
+            </div>
+<div>
+    <i class="fa-solid fa-server"></i>
+                <h2>Database Design and Management</h2>
+                <p>Design and implementation of efficient, scalable databases.
+Skilled in MySQL for managing and organizing data to support web applications.
+Focused on data security, integrity, and easy accessibility.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Frontend-End Development</h2>
+                <p>User-friendly interfaces using React.js and other modern technologies.
+Seamless integration of functionality with visually appealing designs.
+Commitment to step-by-step implementation for optimal results.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+       <div class="work-list">
+        <div class="work">
+          <img src="img/web.jpg" alt="">
+          <div class="layer"><h3>RUBASE APP</h3>
+          <P>The app is made for students in a university.</P>
+          <a href="#"><i class="fa-solid fa-link"></i></a></div>
+          
+     </div>
+       
+       
+        <div class="work">
+          <img src="img/data.jpg" alt="">
+         
+          <div class="layer"><h3>Company APP</h3>
+          <P>The app data is very well managed.</P>
+          <a href="#"><i class="fa-solid fa-link"></i></a></div>
+          
+       </div>
     
+        <div class="work">
+          <img src="img/frontend.jpg" alt="">
+           
+          <div class="layer"><h3>Company APP</h3>
+          <P>The app is made for a Company called Anytime.</P>
+          <a href="#"><i class="fa-solid fa-link"></i></a></div>
+          
+        </div>
+ </div>
+    
+       </div>
+       <a href="#"class="btn">See more</a>
+    </div>
+
+</div>
+<!----contact-->
+<div id="contact" >
+    <div class="container">
+        <div class="row">
+<div class="contact-left">
+    <h1 class="sub-title">Contact Me</h1>
+    <p> <i class="fa-solid fa-paper-plane"></i>contact@jeffomullo559@gmail.com</p>
+    <p><i class="fa-solid fa-phone"></i>0114567007</p>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/profile.php?id=61566405267986"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/programer_jeff/"><i class="fa-brands fa-instagram"></i></i></a>
+        <a href="https://x.com/jeffomullo559"><i class="fa-brands fa-x-twitter"></i></i></a>
+        <a href="www.linkedin.com/in/jeff-omullo-175479316"><i class="fa-brands fa-linkedin"></i></i></a>
+    </div>
+    <a href="https://docs.google.com/document/d/1l87luDPj4-zJvW415hR9GIMLo5Tpgd4o_9wXGLAFxdk/edit?usp=sharing"download class="btn btn2">Download CV</a>
+</div>
+<div class="contact-right"></div>
+<form>
+    <input type="text"name="name" placeholder="Your name"required>
+     <input type="email"name="email"placeholder="Your email"required>
+     <textarea name="message" row="6"placeholder="Your message"></textarea>
+     <button type="submit"class="btn btn2">Submit</button>
+</form>
+        </div>
+
+    </div>
+
+</div>
+<div class="copyright">
+    <p>copyright@ JEFF</p>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for (var tablink of tablinks) {
+            tablink.classList.remove("active-links");
+        }
+        for (var tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-links");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
 </body>
 </html>
